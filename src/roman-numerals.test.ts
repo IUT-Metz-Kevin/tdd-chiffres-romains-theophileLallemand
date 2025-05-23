@@ -2,7 +2,8 @@ import { expect, test } from "vitest";
 
 class RomanNumeral {
   of(value: string): number {
-    
+    if(value = "I") return 1
+    else return 0
   }
 }
 
