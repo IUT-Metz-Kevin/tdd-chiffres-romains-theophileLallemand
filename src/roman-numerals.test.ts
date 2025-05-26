@@ -8,7 +8,6 @@ class RomanNumeral {
   }
 }
 
-
 test.each([
     ["I", 1],
     ["II", 2]
