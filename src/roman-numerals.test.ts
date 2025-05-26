@@ -4,13 +4,16 @@ class RomanNumeral {
   of(value: string): number {
     if(value === "I") return 1
     else if(value === "II") return 2
+    else if(value === "III") return 3
+
     else return 0
   }
 }
 
 test.each([
     ["I", 1],
-    ["II", 2]
+    ["II", 2],
+    ["III",3],
 ])("%s should give %s", (input, expected) => {
   expect(new RomanNumeral().of(input)).toBe(expected);
 });
